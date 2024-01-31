@@ -1,13 +1,17 @@
 
 import './App.css'
-import './style.scss';
+import Layout from "./components/common/layout"
+import ContentPage from './components/content/content-page'
 function App() {
   return (
     <>
-      <div className="container">
-        first app
+      <Layout>
+        <ContentPage />
+        <header></header>
+      </Layout>
+      <div>
+        aaa
       </div>
-
     </>
   )
 }
