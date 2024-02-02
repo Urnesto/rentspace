@@ -1,0 +1,78 @@
+/* content-page.module.scss */
+
+.content {
+  &__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+    padding: 10px;
+  }
+
+  &__gridItem {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    h1 {
+      background-color: aqua;
+    }
+
+    .card {
+      &__slider {
+        position: relative;
+      }
+      &__prevButton {
+        position: absolute;
+        top: 50%;
+      }
+      &__nextButton {
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+
+      &__slide {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 100%;
+      }
+      &__container {
+        margin-left: 10px;
+      }
+      &__text {
+        font-size: large;
+      }
+      &__data {
+        display: flex;
+      }
+      &__dataItem {
+        display: flex;
+        margin-right: 10px;
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      &__price {
+        display: flex;
+        align-items: center;
+        margin: 20px 0 20px 0;
+        font-weight: 500;
+        font-size: 1.325rem;
+        color: #17d8e6;
+        img {
+          padding: 5px;
+          width: 12px;
+          height: 12px;
+        }
+      }
+      &__button {
+        margin-bottom: 10px;
+        background-color: #00c0cf;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
