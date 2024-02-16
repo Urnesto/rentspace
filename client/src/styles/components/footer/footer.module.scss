@@ -1,0 +1,21 @@
+@import "../../../variables.scss";
+
+.footer {
+  background-color: $dark;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__name {
+    margin-left: 20px;
+  }
+
+  &__social {
+    margin-right: 20px;
+    display: flex;
+    a {
+      padding: 10px;
+    }
+  }
+}

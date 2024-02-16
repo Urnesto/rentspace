@@ -20,13 +20,18 @@
       &__slider {
         position: relative;
       }
-      &__prevButton {
-        position: absolute;
-        top: 50%;
-      }
+      &__prevButton,
       &__nextButton {
         position: absolute;
         top: 50%;
+        background: #000000;
+        opacity: 40%;
+        border: 0;
+        :hover {
+          transform: scale(1.2);
+        }
+      }
+      &__nextButton {
         right: 0;
       }
 

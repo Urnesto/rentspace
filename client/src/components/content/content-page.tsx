@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from '../../styles/components/content/content-page.module.scss';
-import { sqaure, people, euro } from '../../assets';
+import { sqaure, people, euro, leftArrow, rightArrow } from '../../assets';
 import { contentData } from '../../constants';
 
 const ContentPage: React.FC = () => {
@@ -24,11 +24,11 @@ const ContentPage: React.FC = () => {
                         <div className={styles.card}>
                             <div className={styles.card__slider}>
                                 <button onClick={prevSlide} className={styles.card__prevButton}>
-                                    Prev
+                                    <img src={leftArrow} width={25} height={25} alt="left arrow" />
                                 </button>
                                 <img src={item.images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className={styles.card__slide} />
                                 <button onClick={nextSlide} className={styles.card__nextButton}>
-                                    Next
+                                    <img src={rightArrow} width={25} height={25} alt="right arrow" />
                                 </button>
                             </div>
                             <div className={styles.card__container}>
